@@ -1,0 +1,13 @@
+name: Testing composite actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run_composite:
+    runs-on: ubuntu-latest
+    name: A job that test composite workflow runs
+    steps:
+    - uses: actions/checkout@v2
+    - id: Runscript
+      uses: malcon-moreira-sm/github-actions-features-test@v1

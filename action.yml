@@ -1,0 +1,9 @@
+name: 'Runscript'
+description: 'Run a composite action'
+
+runs:
+  using: "composite"
+  steps: 
+    - run: ${{ github.action_path }}/composite/echo.sh
+      shell: bash
+      
